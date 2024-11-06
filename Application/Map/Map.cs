@@ -12,6 +12,7 @@ namespace Application.Mapper
             return new ClienteDto
             {
                 Id = cliente.Id,
+                Nome = cliente.Nome,
                 Cpf = cliente.Cpf,
                 DataNascimento = cliente.DataNascimento,
                 UfNascimento = cliente.UfNascimento,
@@ -25,6 +26,7 @@ namespace Application.Mapper
             return new Cliente
             {
                 Id = clienteDto.Id,
+                Nome = clienteDto.Nome,
                 Cpf = clienteDto.Cpf,
                 DataNascimento = clienteDto.DataNascimento,
                 UfNascimento = clienteDto.UfNascimento,
@@ -82,6 +84,7 @@ namespace Application.Mapper
             {
                 Id = cliente.Id,
                 Cpf = cliente.Cpf,
+                Nome = cliente.Nome,
                 DataNascimento = cliente.DataNascimento,
                 UfNascimento = cliente.UfNascimento,
                 DataCadastro = cliente.DataCadastro,
@@ -104,6 +107,7 @@ namespace Application.Mapper
             {
                 Id = cliente.Id,
                 Cpf = cliente.Cpf,
+                Nome = cliente.Nome,
                 DataNascimento = cliente.DataNascimento,
                 UfNascimento = cliente.UfNascimento,
                 DataCadastro = cliente.DataCadastro,
