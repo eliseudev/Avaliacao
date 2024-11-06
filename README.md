@@ -1,3 +1,10 @@
+# Teste Tecnico
+
+1. Foi remivido o projeto principal.
+2. Foram adicionado as camadas, Domain, Application e Infra.
+3. Foi adicionando o mapeamento de entidades e dtos manual sem bibliotecas exemplo, AutoMapper.
+4. Foi adicionado a tabela de Cliente a coluna Nome.
+
 # Requisitos
 - .NET Core 8
 - Banco de dados: SQL Server
