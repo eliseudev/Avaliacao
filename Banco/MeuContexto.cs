@@ -12,14 +12,12 @@ public class MeuContexto<T> : DbContext where T : class
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=tcp:localhost,1433;Initial Catalog=Teste;User ID=sa;Password='123456';trusted_connection=false;Persist Security Info=False;Encrypt=False")
+            "Server=tcp:NETCORE-BOOK\\SQLEXPRESS,1433;Initial Catalog=TesteDb;User ID=sa;Password='jesuscristo';trusted_connection=false;Persist Security Info=False;Encrypt=False")
             .LogTo(Console.WriteLine, LogLevel.Information);
     }
 
     public DbSet<Cliente> Clientes { get; set; }
     public DbSet<Endereco> Enderecos { get; set; }
-
-   
 
     public void Adicionar(T obj)
     {
